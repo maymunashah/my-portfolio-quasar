@@ -5,7 +5,6 @@
         <q-card-section>
           <div class="text-h6">{{ skill.name }}</div>
           <q-icon :name="skill.icon" size="40px" color="primary" />
-          <div class="text-subtitle2">by John Doe</div>
         </q-card-section>
 
         <q-separator dark inset />
