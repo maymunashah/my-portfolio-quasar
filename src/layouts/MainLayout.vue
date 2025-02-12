@@ -1,102 +1,97 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
+  <q-layout view="hHh lpR fFf">
+    <q-header bordered class="bg-primary text-black">
       <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="toggleLeftDrawer"
-        />
-
         <q-toolbar-title>
-          Quasar App
+          <router-link to="/">
+            <q-avatar>
+              <img src="../assets/logo.png" />
+            </q-avatar>
+          </router-link>
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <q-space />
+
+        <q-space />
+        <!-- Push items to the right -->
+
+        <!-- SHOW NAV BUTTONS IF SCREEN IS WIDE -->
+        <div v-if="$q.screen.width > 500" class="q-gutter-sm">
+          <q-btn flat label="Portfolio" to="/portfolio" />
+          <q-btn flat label="Techfolio" to="/techfolio" />
+          <q-btn flat label="CV" href="/cv.pdf" target="_blank" />
+          <q-btn flat label="Contact" to="/contactme" />
+        </div>
+        <!-- SHOW DRAWER IF SCREEN IS NARROW -->
+        <q-btn v-else flat icon="menu" @click="drawerToggle" />
+
+        <q-drawer v-model="drawer" side="right" overlay>
+          <q-list>
+            <q-item clickable v-ripple to="/portfolio" @click="toggleDrawer">Portfolio</q-item>
+            <q-item clickable v-ripple to="/techfolio" @click="toggleDrawer">Techfolio</q-item>
+            <q-item clickable v-ripple href="/cv.pdf" target="_blank" @click="toggleDrawer">
+              CV
+            </q-item>
+            <q-item clickable v-ripple to="/contactme" @click="toggleDrawer">Contact</q-item>
+          </q-list>
+        </q-drawer>
       </q-toolbar>
     </q-header>
-
-    <q-drawer
-      v-model="leftDrawerOpen"
-      show-if-above
-      bordered
-    >
-      <q-list>
-        <q-item-label
-          header
-        >
-          Essential Links
-        </q-item-label>
-
-        <EssentialLink
-          v-for="link in linksList"
-          :key="link.title"
-          v-bind="link"
-        />
-      </q-list>
-    </q-drawer>
 
     <q-page-container>
       <router-view />
     </q-page-container>
+    <q-footer reveal bordered class="bg-primary text-black" style="padding: 10px 20px">
+      <div class="row justify-between align-center items-center full-width" style="width: 100%">
+        <!-- Left-Aligned: Personalized Signature -->
+        <div class="col-auto text-left" style="font-family: monospace">
+          <p class="text-xs">Designed and coded by Maya Shah</p>
+        </div>
+
+        <!-- Center-Aligned: Copyright -->
+        <div class="col-auto text-center" style="font-family: monospace">
+          <p class="text-xs">&copy; {{ new Date().getFullYear() }} - Maya Shah</p>
+        </div>
+
+        <!-- Right-Aligned: Current Time & Date -->
+        <div class="col-auto text-right" style="font-family: monospace">
+          <p class="text-xs" style="display: flex; justify-content: flex-end">
+            {{ new Date().toLocaleDateString() }} | {{ new Date().toLocaleTimeString() }}
+          </p>
+        </div>
+      </div>
+    </q-footer>
   </q-layout>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import EssentialLink from 'components/EssentialLink.vue'
+// import SocialLinks from '../components/SocialLinks.vue'
+import { useQuasar } from 'quasar'
 
-const linksList = [
-  {
-    title: 'Docs',
-    caption: 'quasar.dev',
-    icon: 'school',
-    link: 'https://quasar.dev'
-  },
-  {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: 'https://github.com/quasarframework'
-  },
-  {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev'
-  },
-  {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
-  },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
-  },
-  {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev'
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
-  }
-]
+const $q = useQuasar()
+const drawer = ref(false)
 
-const leftDrawerOpen = ref(false)
+console.log($q.screen.width)
 
-function toggleLeftDrawer () {
-  leftDrawerOpen.value = !leftDrawerOpen.value
+const drawerToggle = () => {
+  drawer.value = !drawer.value
 }
+
+// Update live clock every second
+setInterval(() => {
+  document.getElementById('live-clock').textContent = new Date().toLocaleTimeString()
+}, 1000)
 </script>
+
+<style scoped>
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+#live-clock {
+  padding: 0%;
+  margin: 0%;
+}
+</style>

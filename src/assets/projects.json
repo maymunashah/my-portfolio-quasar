@@ -1,0 +1,98 @@
+[
+  {
+    "title": "Smart Gym App",
+    "description": "Designed and developed a hyper-personalized workout algorithm for a gym app that boosted user engagement by 30%. The algorithm takes into account individual fitness levels, goals, and preferences to tailor workouts dynamically. I led the frontend prototype development, using Vue.js for a sleek, responsive interface. The project was completed in under 6 weeks and adopted by the fitness brand due to its user-friendly design and high user engagement.",
+    "date": "2024-06-01",
+    "repo-link": "https://github.com/yourusername/smart-gym-app",
+    "image": "smartGYM.png",
+    "icons": ["python.png", "javascript.png", "vuejs.png", "flask.png"]
+  },
+  {
+    "title": "Music Plagiarism Detection",
+    "description": "Developed a custom Convolutional Neural Network (CNN) model that achieved 98% accuracy in detecting music plagiarism. The project involved a deepfake-based dataset of 40 Italian artists, allowing the model to differentiate between original music and unauthorized copies. The detection system leverages deep learning for feature extraction and classification, leading to accurate detection even in noisy data environments. This system has potential applications in intellectual property protection and the music industry.",
+    "date": "2024-04-15",
+    "repo-link": "https://github.com/yourusername/music-plagiarism-detection",
+    "image": "music_plagiarism.png",
+    "icons": ["python.png", "tensorflow.png", "keras.png"]
+  },
+  {
+    "title": "RAG Chatbot",
+    "description": "Created a Retrieval-Augmented Generation (RAG) based chatbot for an enterprise application. The system automates Large Language Model (LLM) evaluation, cutting the model selection time by 50%. It also improves efficiency in identifying the most suitable AI models for specific business use cases, reducing manual intervention. The project incorporated tools like PyTorch and Hugging Face Transformers to fine-tune large-scale language models, enabling quicker responses and better accuracy in customer interactions.",
+    "date": "2024-02-20",
+    "repo-link": "https://github.com/yourusername/rag-chatbot",
+    "image": "rag_chatbot.png",
+    "icons": ["python.png", "pytorch.png", "huggingface.png"]
+  },
+  {
+    "title": "Sales Forecasting",
+    "description": "Enhanced inventory management for a top interior design brand through a Sales Forecasting system that reduced excess stock by 15%. By processing and analyzing multi-table sales data, the model identified trends and forecasted future demand more accurately, allowing the company to optimize inventory and avoid overstocking. The system incorporated Time Series Forecasting techniques, boosting forecasting accuracy by 25% and enabling better decision-making for stock management.",
+    "date": "2023-10-10",
+    "repo-link": "https://github.com/yourusername/sales-forecasting",
+    "image": "sales_forecasting.png",
+    "icons": ["python.png", "pandas.png", "numpy.png", "scikit-learn.png"]
+  },
+  {
+    "title": "LLM-based Classification with Sentiment Analysis",
+    "description": "Engineered a Natural Language Processing (NLP) model for classifying text with sentiment analysis and priority tagging. The system achieved 92% accuracy in classifying customer feedback, categorizing it based on sentiment and urgency. The model leveraged fine-tuned large language models (LLMs) and transformer-based architectures like BERT to ensure the highest level of accuracy in interpreting sentiment and categorizing requests, making it useful for customer service applications.",
+    "date": "2024-01-10",
+    "repo-link": "https://github.com/yourusername/llm-sentiment-analysis",
+    "image": "llm_classification.png",
+    "icons": ["python.png", "tensorflow.png", "bert.png"]
+  },
+  {
+    "title": "Automated Machine Learning (AutoML) Project",
+    "description": "Led an AutoML-based project that created a low-code platform for building machine learning models. The platform allows users to generate chatbot functionalities and format parameters easily without needing deep technical expertise. The project aimed to democratize machine learning by simplifying the process of model building and deployment, allowing users to focus on problem-solving without worrying about the underlying technical complexity.",
+    "date": "2023-05-01",
+    "repo-link": "https://github.com/yourusername/automl-low-code",
+    "image": "automl_project.png",
+    "icons": ["python.png", "flask.png", "tensorflow.png"]
+  },
+  {
+    "title": "Fake News Detection (Explainable AI)",
+    "description": "Conducted a survey on explainable fake news detection, presenting findings at the Annual AI Camp in Cyprus. The project aimed at identifying the key features that make news articles more likely to be fake, using explainable AI techniques to ensure transparency in decision-making. By combining NLP and machine learning algorithms, the system can detect misinformation while providing insights into the reasons behind the classification, ensuring user trust in the system.",
+    "date": "2023-06-15",
+    "repo-link": "https://github.com/yourusername/fake-news-detection",
+    "image": "fake_news_detection.png",
+    "icons": ["python.png", "scikit-learn.png", "xgboost.png", "shap.png"]
+  },
+  {
+    "title": "Epilepsy Prediction (Seizure Onset Prediction)",
+    "description": "Developed a machine learning model that predicts epilepsy seizures 5 minutes before onset, using ECG and EEG data. The model achieved 85% sensitivity in detecting seizures before they occur, allowing for better preparedness in medical settings. The system uses signal processing and deep learning techniques to analyze time-series data from patient wearables, making it a useful tool for improving patient care and safety.",
+    "date": "2022-11-01",
+    "repo-link": "https://github.com/yourusername/epilepsy-prediction",
+    "image": "epilepsy_prediction.png",
+    "icons": ["python.png", "tensorflow.png", "keras.png"]
+  },
+  {
+    "title": "Nightingle Song Pattern (Audio Clustering)",
+    "description": "Built an AI system to cluster nightingale song patterns for environmental analysis. The project used deep learning algorithms to cluster multiple audio samples, achieving 95% accuracy in identifying similar song patterns. The system applies audio feature extraction and unsupervised learning to classify sound samples, which can be used for wildlife monitoring and ecological studies.",
+    "date": "2022-09-12",
+    "repo-link": "https://github.com/yourusername/nightingale-song-patterns",
+    "image": "nightingale_song_patterns.png",
+    "icons": ["python.png", "tensorflow.png", "librosa.png"]
+  },
+  {
+    "title": "NAO Planning Challenge (Robot Dance Choreography)",
+    "description": "Optimized robot dance choreography for the NAO humanoid robot using a greedy search algorithm. The project focused on creating optimal movement sequences for the robot to perform a dance routine based on predefined movements. The algorithm ensures the least amount of time and energy is used for each movement, making the choreography both efficient and visually appealing.",
+    "date": "2021-12-15",
+    "repo-link": "https://github.com/yourusername/nao-planning-challenge",
+    "image": "nao_planning.png",
+    "icons": ["python.png", "naoqi.png"]
+  },
+  {
+    "title": "Vision Assisting Device for the Visually Impaired",
+    "description": "Developed a Raspberry Pi-based vision-assisting device for the visually impaired, improving object detection accuracy by 85%. The device uses a camera and AI-based object detection models to identify objects in the user’s path, alerting them through haptic feedback or audio signals. The project was designed to assist people with visual impairments in navigating daily environments more safely.",
+    "date": "2020-07-20",
+    "repo-link": "https://github.com/yourusername/vision-assisting-device",
+    "image": "vision_assisting_device.png",
+    "icons": ["python.png", "opencv.png", "tensorflow.png"]
+  },
+  {
+    "title": "Political Clustering (Gephi Analysis)",
+    "description": "Used Gephi analysis to identify political clusters in Pakistan, focusing on both right- and left-wing political groups, and identifying influential non-celebrity influencers. The project involved processing large datasets of political discussions and analyzing the network of relationships between various political entities and influencers.",
+    "date": "2019-03-12",
+    "repo-link": "https://github.com/yourusername/political-clustering",
+    "image": "political_clustering.png",
+    "icons": ["python.png", "gephi.png"]
+  }
+]

@@ -1,0 +1,104 @@
+{
+  "skills": [
+    {
+      "name": "JavaScript",
+      "icon": "mdi-language-javascript",
+      "description": "Master the art of interactive web applications with versatile JavaScript, the backbone of modern front-end development."
+    },
+    {
+      "name": "Python",
+      "icon": "mdi-language-python",
+      "description": "Leverage Python's simplicity and power to solve complex problems in AI, data analysis, and automation."
+    },
+    {
+      "name": "Flask",
+      "icon": "mdi-flask",
+      "description": "Develop lightweight and fast web applications using Flask, a micro-framework perfect for prototyping and scaling."
+    },
+    {
+      "name": "TensorFlow",
+      "icon": "mdi-brain",
+      "description": "Build and deploy cutting-edge machine learning models with TensorFlow, driving AI innovations across industries."
+    },
+    {
+      "name": "Keras",
+      "icon": "mdi-chart-line",
+      "description": "Simplify neural network development with Keras, offering an intuitive API for rapid AI experimentation."
+    },
+    {
+      "name": "PyTorch",
+      "icon": "mdi-fire",
+      "description": "Empower dynamic deep learning research and production with PyTorch's flexible computational graph capabilities."
+    },
+    {
+      "name": "PostgreSQL",
+      "icon": "mdi-database",
+      "description": "Manage robust, scalable databases with PostgreSQL, the advanced open-source relational database system."
+    },
+    {
+      "name": "Vue.js & Quasar",
+      "icon": "mdi-vuejs",
+      "description": "Craft sleek, high-performance web apps effortlessly with Vue.js and Quasar Framework's elegant components."
+    },
+    {
+      "name": "FastAPI",
+      "icon": "mdi-speedometer",
+      "description": "Create blazing-fast APIs with FastAPI, designed for high-performance, modern Python applications."
+    },
+    {
+      "name": "Gradio",
+      "icon": "mdi-presentation",
+      "description": "Build intuitive UI interfaces for machine learning models quickly and efficiently using Gradio."
+    },
+    {
+      "name": "C/C++",
+      "icon": "mdi-language-cpp",
+      "description": "Harness the power of C/C++ for system programming, embedded systems, and high-performance applications."
+    },
+    {
+      "name": "MATLAB",
+      "icon": "mdi-function-variant",
+      "description": "Analyze data, develop algorithms, and create models with MATLAB, essential for engineering computations."
+    },
+    {
+      "name": "Embedded Systems",
+      "icon": "mdi-chip",
+      "description": "Design and optimize embedded systems for real-time applications in IoT, robotics, and electronics."
+    },
+    {
+      "name": "Microcontrollers",
+      "icon": "mdi-microchip",
+      "description": "Program microcontrollers like Arduino and STM32 to bring hardware projects to life with precision."
+    },
+    {
+      "name": "Machine Learning",
+      "icon": "mdi-robot",
+      "description": "Develop predictive models and intelligent systems with core machine learning techniques and tools."
+    },
+    {
+      "name": "Deep Learning",
+      "icon": "mdi-brain",
+      "description": "Explore the depths of AI with deep learning frameworks, revolutionizing vision, speech, and NLP tasks."
+    },
+    {
+      "name": "Linux",
+      "icon": "mdi-linux",
+      "description": "Master the Linux operating system for development, networking, and embedded solutions."
+    },
+    {
+      "name": "Git & GitHub",
+      "icon": "mdi-git",
+      "description": "Manage code efficiently with Git and GitHub, enabling version control and collaborative development."
+    },
+    {
+      "name": "HTML",
+      "icon": "mdi-language-html5",
+      "description": "Structure your web content with HTML5, the foundation of every website, ensuring semantic and accessible designs."
+    },
+    {
+      "name": "CSS",
+      "icon": "mdi-language-css3",
+      "description": "Style stunning, responsive websites with CSS3, bringing life to your designs through animations, layouts, and more."
+    }
+  ]
+}

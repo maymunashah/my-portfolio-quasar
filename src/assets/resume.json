@@ -1,0 +1,96 @@
+{
+  "name": "Maya Shah",
+  "title": "AI Developer",
+  "location": "Reggio Emilia, Italy",
+  "contact": {
+    "phone": "+39 3401935369",
+    "whatsapp": "https://wa.me/3401935369",
+    "email": "memoonashah78@gmail.com",
+    "github": "https://github.com/maymunashah",
+    "linkedin": "https://www.linkedin.com/in/memoonashah/"
+  },
+
+  "objective": "Driven to find practical solutions to complex problems, I focus on identifying inefficiencies and creating automated systems to address them. I take pride in learning quickly and applying new knowledge effectively to develop well-thought-out, efficient outcomes.",
+  "skills": [
+    "Machine Learning, Deep Learning, NLP (TensorFlow, PyTorch)",
+    "Python, C++, JavaScript, HTML, CSS",
+    "GitHub, Atlassian Jira, Blueprint-based Code Organization",
+    "PostgreSQL, Flask, Vue.js, Power BI, Linux",
+    "Generative AI, LLMs",
+    "Audio, Video, Image, Text, and Time-series Data Processing"
+  ],
+  "experience": [
+    {
+      "position": "Junior Data Scientist",
+      "company": "LOOP AI Cognitive Computing, New York",
+      "duration": "April 2024 – Present",
+      "responsibilities": [
+        "Led cross-functional teams of 10+ members, mentored 5 interns, maintained project flow.",
+        "Achieved 100% documentation accuracy and bi-weekly alignment goals.",
+        "Smart Gym App: Designed hyper-personalized workout algorithms, increasing user engagement by 30%.",
+        "Music Plagiarism Detection: Built CNN model achieving 98% accuracy on deepfake dataset of 40 Italian artists.",
+        "RAG Chatbot: Automated LLM evaluation, reducing model selection time by 50%.",
+        "Fine-tuned BERT and ROBERTA models, achieving 99% accuracy in email classification."
+      ]
+    },
+    {
+      "position": "Data Science Intern",
+      "company": "LOOP AI Cognitive Computing, New York",
+      "duration": "October 2023 – April 2024",
+      "responsibilities": [
+        "Contributed to Music Plagiarism Detection and Time Series Sales Forecasting projects.",
+        "Drove a 20% improvement in prediction accuracy.",
+        "Processed multi-table sales data, improving forecasting accuracy by 25% and streamlining inventory decisions."
+      ]
+    },
+    {
+      "position": "Senior Teacher",
+      "company": "The Educators, Pakistan",
+      "duration": "September 2018 – July 2021",
+      "responsibilities": []
+    }
+  ],
+  "education": [
+    {
+      "degree": "Masters in Artificial Intelligence",
+      "institution": "University of Bologna, Bologna, Italy",
+      "duration": "October 2021 – August 2024"
+    },
+    {
+      "degree": "Postgraduate Diploma in ECE",
+      "institution": "University of Sindh, Hyderabad, Pakistan",
+      "duration": "December 2018 – December 2019"
+    },
+    {
+      "degree": "Bachelor of Engineering in Electronics",
+      "institution": "Mehran University of Engineering and Technology, Jamshoro, Pakistan",
+      "duration": "January 2014 – November 2017"
+    }
+  ],
+  "projects": [
+    "LLM-based classification with sentiment analysis and priority tagging (92% accuracy).",
+    "Sales Forecasting: Reduced excess stock by 15% for a top interior design brand.",
+    "Automated Machine Learning project with chatbot and parameter formatting features.",
+    "Explainable Fake News Detection (Presented at AI Camp, Cyprus, 2023).",
+    "QA on COQA Dataset: Enhanced answer prediction (90% F1 score).",
+    "Political Clustering: Identified right- and left-wing clusters in Pakistan using Gephi Analysis.",
+    "VLSI Circuit Arrangement using SAT, SMT, Constraint Programming, and Linear Programming.",
+    "Epilepsy Prediction: Developed seizure onset prediction model (85% sensitivity).",
+    "Nightingale Song Patterns - Audio Clustering Project (95% accuracy).",
+    "NAO Planning Challenge - Robot Dance Choreography Optimization.",
+    "Vision Assisting Device: Raspberry Pi-based device for visually impaired (85% detection accuracy)."
+  ],
+  "research_interests": [
+    "Natural Language Processing, Machine Learning, Deep Learning",
+    "Ethical AI in Education and Innovation",
+    "Optimization-based Problem Solving"
+  ],
+  "languages": {
+    "English": "Fluent/Bilingual",
+    "Italian": "B2 and Actively Learning",
+    "Sindhi": "Native",
+    "Urdu": "Fluent/Bilingual"
+  },
+  "hobbies": ["Lacrosse", "Graphic Design", "Crochet", "Art"],
+  "work_rights": "I have legal rights to work full-time in Italy and I am not on a student permit."
+}

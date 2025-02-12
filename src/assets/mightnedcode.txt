@@ -1,0 +1,13 @@
+<q-footer reveal bordered class="bg-primary text-black">
+      <div class="row justify-between items-center full-width">
+        <!-- Logo on the Left -->
+        <q-img src="../assets/logo.png" alt="Logo" class="logo" />
+
+        <!-- Social Icons in the Center -->
+        <div class="row justify-center items-center">
+          <SocialLinks />
+        </div>
+
+        <!-- 2025 Text on the Right -->
+        <div class="text">2025</div>
+      </div>
