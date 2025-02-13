@@ -85,11 +85,6 @@ setInterval(() => {
 </script>
 
 <style scoped>
-.logo {
-  width: 50px;
-  height: 50px;
-}
-
 #live-clock {
   padding: 0%;
   margin: 0%;

@@ -16,9 +16,10 @@
     "Machine Learning, Deep Learning, NLP (TensorFlow, PyTorch)",
     "Python, C++, JavaScript, HTML, CSS",
     "GitHub, Atlassian Jira, Blueprint-based Code Organization",
-    "PostgreSQL, Flask, Vue.js, Power BI, Linux",
+    "PostgreSQL, Flask, Vue.js, Quasar, Power BI, Linux",
     "Generative AI, LLMs",
-    "Audio, Video, Image, Text, and Time-series Data Processing"
+    "Audio, Video, Image, Text, and Time-series Data Processing",
+    "Graphic Design"
   ],
   "experience": [
     {
@@ -37,7 +38,7 @@
     {
       "position": "Data Science Intern",
       "company": "LOOP AI Cognitive Computing, New York",
-      "duration": "October 2023 – April 2024",
+      "duration": "October 2023 - April 2024",
       "responsibilities": [
         "Contributed to Music Plagiarism Detection and Time Series Sales Forecasting projects.",
         "Drove a 20% improvement in prediction accuracy.",
@@ -47,7 +48,7 @@
     {
       "position": "Senior Teacher",
       "company": "The Educators, Pakistan",
-      "duration": "September 2018 – July 2021",
+      "duration": "September 2018 - July 2021",
       "responsibilities": []
     }
   ],
@@ -55,17 +56,17 @@
     {
       "degree": "Masters in Artificial Intelligence",
       "institution": "University of Bologna, Bologna, Italy",
-      "duration": "October 2021 – August 2024"
+      "duration": "October 2021 - August 2024"
     },
     {
       "degree": "Postgraduate Diploma in ECE",
       "institution": "University of Sindh, Hyderabad, Pakistan",
-      "duration": "December 2018 – December 2019"
+      "duration": "December 2018 - December 2019"
     },
     {
       "degree": "Bachelor of Engineering in Electronics",
       "institution": "Mehran University of Engineering and Technology, Jamshoro, Pakistan",
-      "duration": "January 2014 – November 2017"
+      "duration": "January 2014 - November 2017"
     }
   ],
   "projects": [
@@ -93,5 +94,5 @@
     "Urdu": "Fluent/Bilingual"
   },
   "hobbies": ["Lacrosse", "Graphic Design", "Crochet", "Art"],
-  "work_rights": "I have legal rights to work full-time in Italy and I am not on a student permit."
+  "work_rights": "I work with partita IVA as a professional AI developer"
 }
