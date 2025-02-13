@@ -77,16 +77,6 @@
 
   <section>
     <div class="heading-container">
-      <div class="line-icon bg-black"></div>
-      <h1 class="heading">Quirks I am working on:</h1>
-    </div>
-    <div class="testimonial-wrapper q-mt-lg">
-      <!-- Added class for spacing -->
-      <flaws />
-    </div>
-  </section>
-  <section>
-    <div class="heading-container">
       <div class="line-icon bg-secondary"></div>
       <h1 class="heading text-secondary">Languages</h1>
     </div>
@@ -108,7 +98,7 @@ import MySkills from 'components/MySkills.vue'
 import ResumeData from 'assets/resume.json'
 import MyActivities from 'components/MyActivities.vue'
 import TestimonialCards from 'components/TestimonialCards.vue'
-import flaws from 'components/MyFlaws.vue'
+// import flaws from 'components/MyFlaws.vue'
 console.log(Screen)
 </script>
 
