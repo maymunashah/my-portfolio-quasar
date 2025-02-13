@@ -40,7 +40,7 @@ const getStyles = (index) => {
             size="40px"
             v-for="(icon, index) in project.customIcons"
             :key="index"
-            :src="`/src/assets/icons/${icon}.png`"
+            :src="`/icons/${icon}.png`"
             class="icons-custom"
           />
         </div>
