@@ -30,7 +30,11 @@
           <h2 v-if="section.id === 'about'" class="title">
             {{ resumeData.title }}
           </h2>
-          <p v-if="section.id === 'about'" :style="{ color: getTextColor(section.color) }">
+          <p
+            class="text-body-2 text-weight-thin objective-text"
+            v-if="section.id === 'about'"
+            :style="{ color: getTextColor(section.color) }"
+          >
             {{ resumeData.objective }}
           </p>
 
@@ -50,10 +54,12 @@
           <div v-if="section.id === 'experience'">
             <h2 :style="{ color: getTextColor(section.color) }">Work Experience</h2>
             <div v-for="job in resumeData.experience" :key="job.company" class="item">
-              <h3 :style="{ color: getTextColor(section.color) }">
+              <h3 class="objective-text" :style="{ color: getTextColor(section.color) }">
                 {{ job.position }} - {{ job.company }}
               </h3>
-              <p :style="{ color: getTextColor(section.color) }">{{ job.duration }}</p>
+              <p class="objective-text" :style="{ color: getTextColor(section.color) }">
+                {{ job.duration }}
+              </p>
               <li
                 v-for="(responsibility, index) in job.responsibilities"
                 :key="index"
@@ -78,9 +84,15 @@
           <div v-if="section.id === 'education'">
             <h2 :style="{ color: getTextColor(section.color) }">Education</h2>
             <div v-for="edu in resumeData.education" :key="edu.institution" class="item">
-              <h3 :style="{ color: getTextColor(section.color) }">{{ edu.degree }}</h3>
-              <p :style="{ color: getTextColor(section.color) }">{{ edu.institution }}</p>
-              <p :style="{ color: getTextColor(section.color) }">{{ edu.year }}</p>
+              <h3 class="objective-text" :style="{ color: getTextColor(section.color) }">
+                {{ edu.degree }}
+              </h3>
+              <p class="objective-text" :style="{ color: getTextColor(section.color) }">
+                {{ edu.institution }}
+              </p>
+              <p class="objective-text" :style="{ color: getTextColor(section.color) }">
+                {{ edu.year }}
+              </p>
             </div>
           </div>
 
@@ -307,5 +319,101 @@ button i {
 
 .section-content {
   animation: fadeInMoveRight 0.5s ease-in-out;
+}
+/* Make the sidebar hidden on small screens */
+@media (max-width: 768px) {
+  .objective-text {
+    font-size: 14px; /* Adjust to the desired smaller size */
+  }
+  .sidebar {
+    display: none;
+  }
+
+  .content {
+    padding-left: 0; /* Adjust content to take full width */
+  }
+
+  .portfolio-container {
+    display: block; /* Change layout from flex to block for full-width content */
+  }
+
+  /* Adjust content padding and margins for smaller screens */
+  .section {
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  .sidebar button {
+    font-size: 1rem; /* Reduce button font size on small screens */
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-size: 1.5rem; /* Adjust font size for readability */
+  }
+
+  p {
+    font-size: 14;
+    /* line-height: 30px; */
+  }
+
+  .section-content {
+    animation: fadeInMoveRight 0.5s ease-in-out;
+  }
+
+  .social-buttons {
+    margin: 10px 0; /* Adjust margin for social buttons */
+  }
+}
+
+/* Make content responsive on medium screens (e.g., tablets) */
+@media (max-width: 1024px) {
+  .sidebar {
+    display: none;
+  }
+
+  .content {
+    padding-left: 0; /* No left padding for the content */
+  }
+
+  .portfolio-container {
+    display: block;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    font-size: 1.75rem; /* Adjust font size for medium screens */
+  }
+
+  .social-buttons {
+    margin: 10px 100px;
+  }
+}
+
+/* Basic styles for larger screens (desktop and up) */
+@media (min-width: 1025px) {
+  .sidebar {
+    display: block; /* Keep sidebar visible */
+  }
+
+  .content {
+    padding-left: 170px; /* Space for the sidebar */
+  }
+
+  .portfolio-container {
+    display: flex;
+    min-height: auto;
+    flex-wrap: nowrap;
+  }
+
+  .section {
+    padding: 40px;
+  }
+
+  .social-buttons {
+    margin: 20px 250px;
+  }
 }
 </style>

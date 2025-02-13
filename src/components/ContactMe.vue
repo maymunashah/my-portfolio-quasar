@@ -1,13 +1,9 @@
 <template>
   <section class="contact-section">
     <h2 class="contact-heading">Let’s Connect!</h2>
-    <p class="contact-text">
-      I’m always up for a chat—whether it’s about AI, design, tech trends, or just how your day’s
-      going.
-    </p>
+    <p class="contact-text"></p>
     <p class="contact-details">
       If you have a question, want to collaborate, or simply want to say hi, feel free to reach out.
-      I’m excited to hear from you!
     </p>
 
     <!-- Social Icons in the Center -->
@@ -21,13 +17,13 @@
 import SocialLinks from '../components/SocialLinks.vue'
 </script>
 
-<style>
+<style scoped>
 /* Global style for entire page background */
 body {
   background-color: #ff69b4; /* Pink background for the entire page */
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  height: 100vh; /* Ensure the background covers the full viewport height */
+  min-height: 100vh; /* Ensure the background covers the full viewport height */
   display: flex;
   justify-content: center;
   align-items: center;
