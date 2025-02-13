@@ -1,38 +1,72 @@
 <template>
-  <div class="fit row wrap justify-between items-center content-between myskills-container q-mt-xl">
-    <q-card
-      class="bg-accent my-card shadow-3 q-pa-md"
-      v-for="(review, index) in testimonials"
-      :key="index"
-    >
-      <q-card-section>
-        <div class="review text-center q-mb-sm">"{{ review.text }}"</div>
-        <q-separator dark />
-        <div class="author text-center q-mt-sm">- {{ review.author }}</div>
-      </q-card-section>
-    </q-card>
-    <q-space />
+  <div class="fit row wrap justify-evenly items-center content-between testimonials-container">
+    <div v-for="(review, index) in reviews" :key="index">
+      <q-card
+        dark
+        bordered
+        class="bg-black testimonial-card"
+        clickable
+        @click="goToPage(review.route)"
+      >
+        <q-card-section>
+          <div class="text-h8 text-white">{{ review.name }}</div>
+          <!-- <q-icon :name="review.icon" size="30px" color="black" /> -->
+        </q-card-section>
+
+        <q-separator dark inset white />
+
+        <q-card-section>
+          <p>"{{ review.testimonial }}"</p>
+        </q-card-section>
+      </q-card>
+    </div>
   </div>
 </template>
 
 <script>
+import { useRouter } from 'vue-router'
+
 export default {
-  name: 'TestimonialCarousel',
+  name: 'TestimonialsGrid',
+  setup() {
+    const router = useRouter()
+
+    function goToPage(route) {
+      router.push(route) // Navigate to the corresponding page
+    }
+
+    return { goToPage }
+  },
   data() {
     return {
-      testimonials: [
+      reviews: [
         {
-          text: 'Passionate about building intelligent systems that make life easier.',
-          author: 'AI Engineer',
+          name: 'Alireza Dehghan',
+          icon: 'person',
+          testimonial:
+            'I had the absolute pleasure of working alongside Maya during our time on Loop AI Labs. Not only was she my project manager, but she was also an exceptional mentor and an incredibly skilled coder. She is a leader, a natural problem solver, and a very good critical thinker. I learnt so much from her, and any team would be fortunate to have her.',
+          route: '/alireza-review',
         },
         {
-          text: 'Transforming data into meaningful insights with advanced algorithms.',
-          author: 'AI Engineer',
+          name: 'Shaista Naz',
+          icon: 'person',
+          testimonial:
+            "Maya's creativity and dedication to every project we worked on together was nothing short of inspiring. She always goes above and beyond, and her passion for technology is contagious. She is a problem-solver who approaches challenges with a calm and analytical mindset.",
+          route: '/shaista-review',
         },
         {
-          text: 'Dedicated to pushing the boundaries of AI technology for the future.',
-          author: 'AI Engineer',
+          name: 'Ali Abbas Syed',
+          icon: 'person',
+          testimonial:
+            'Memoona Shah was a student of mine during her undergraduate studies in Electronic Engineering. Having taught her multiple courses and mentoring her on several projects including her final year presentation as well, I can confidently say that she has been one of my best students. Memoona demonstrated determination, hard work and a .... (full recommendation is on linked in. duh)',
         },
+        // {
+        //   name: 'John Smith',
+        //   icon: 'person',
+        //   testimonial:
+        //     'Working with Maya was a great experience. Her technical expertise and leadership skills set her apart from others. She is proactive, efficient, and always willing to lend a helping hand. Any team would benefit from her contributions, both professionally and personally.',
+        //   route: '/john-review',
+        // },
       ],
     }
   },
@@ -40,40 +74,29 @@ export default {
 </script>
 
 <style scoped>
-.review {
-  font-family: 'Courier New', Courier, monospace;
-  font-style: italic;
-  font-size: 1.1rem;
-  color: #333;
+.testimonial-card {
+  width: 250px;
+  height: 350px;
+  margin: 10px;
+  font-size: small;
+  cursor: pointer;
 }
 
-.author {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 1rem;
-  color: #555;
-  font-weight: bold;
+.testimonial-card:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
 }
 
-.my-card {
-  width: 220px;
-  min-height: 220px;
-  border-radius: 15px;
-  background-color: #f9f9f9;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.testimonials-container .testimonial-card {
+  padding: 15px;
 }
 
-.my-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.myskills-container {
-  justify-content: space-around;
+p {
+  font-family: monospace;
+  font-size: x-small;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  line-height: 1.5;
 }
 </style>

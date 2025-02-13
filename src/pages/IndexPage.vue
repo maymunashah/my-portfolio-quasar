@@ -7,17 +7,13 @@
       <div class="text-content">
         <h2>MAYA SHAH</h2>
         <h1>AI DEVELOPER</h1>
-        <p>
-          I’m a freelance AI engineer and developer, building tech that solves real problems.
-          Whether you’re dealing with data challenges, building AI-powered apps, or looking to
-          integrate machine learning, I’ve got you covered. I specialize in turning complex problems
-          into scalable, effective solutions. If you've got a problem that could be solved with AI,
-          let’s talk. I thrive on tackling the tough stuff and creating solutions that actually
-          work. Check out my projects to see how I bring AI to life, or hit me up if you want to
-          have a chat.
-        </p>
-        <q-btn to="/techfolio" class="link">My Digital Footprint</q-btn>
-        <q-btn href="/cv.pdf" target="_blank" class="link">Totally Professional CV</q-btn>
+        <h8>
+          {{ ResumeData.description_front_page }}
+        </h8>
+        <div>
+          <q-btn to="/techfolio" class="link">My Digital Footprint</q-btn>
+          <q-btn href="/cv.pdf" target="_blank" class="link">Totally Professional CV</q-btn>
+        </div>
       </div>
     </div>
     <!-- large screen -->
@@ -38,15 +34,9 @@
       </div>
       <div class="col-xs-12 col-sm-6 col-md-8">
         <div class="text-content-small">
-          <p>
-            I’m a freelance AI engineer and developer, building tech that solves real problems.
-            Whether you’re dealing with data challenges, building AI-powered apps, or looking to
-            integrate machine learning, I’ve got you covered. I specialize in turning complex
-            problems into scalable, effective solutions. If you've got a problem that could be
-            solved with AI, let’s talk. I thrive on tackling the tough stuff and creating solutions
-            that actually work. Check out my projects to see how I bring AI to life, or hit me up if
-            you want to have a chat.
-          </p>
+          <h6>
+            {{ ResumeData.description_front_page }}
+          </h6>
           <div class="row">
             <q-btn to="/techfolio" class="link">My Digital Footprint</q-btn>
             <q-btn href="/cv.pdf" target="_blank" class="link">"Totally" Professional CV</q-btn>
@@ -60,19 +50,54 @@
   <section>
     <div class="heading-container">
       <div class="line-icon"></div>
-      <h1 class="heading">What I Do?</h1>
+      <h1 class="heading">What I Do IN TECH?</h1>
     </div>
     <MySkills />
   </section>
 
   <section>
     <div class="heading-container">
-      <!-- <div class="line-icon bg-accent"></div> -->
-      <!-- <h1 class="heading">Testimonials</h1> -->
+      <div class="line-icon bg-accent"></div>
+      <h1 class="heading">What I Do IN LIFE?</h1>
+    </div>
+    <MyActivities />
+    <!-- <MySkills /> -->
+  </section>
+
+  <section>
+    <div class="heading-container">
+      <div class="line-icon bg-black"></div>
+      <h1 class="heading">Testimonials</h1>
     </div>
     <div class="testimonial-wrapper q-mt-lg">
       <!-- Added class for spacing -->
-      <!-- <TestimonialCards /> -->
+      <TestimonialCards />
+    </div>
+  </section>
+
+  <section>
+    <div class="heading-container">
+      <div class="line-icon bg-black"></div>
+      <h1 class="heading">Quirks I am working on:</h1>
+    </div>
+    <div class="testimonial-wrapper q-mt-lg">
+      <!-- Added class for spacing -->
+      <flaws />
+    </div>
+  </section>
+  <section>
+    <div class="heading-container">
+      <div class="line-icon bg-secondary"></div>
+      <h1 class="heading text-secondary">Languages</h1>
+    </div>
+    <div class="text-black">
+      <!-- Added class for spacing -->
+      <h6 class="custom-heading">
+        Oh did i mention i am a multilingual person? I speak Sindhi, urdu, english, italian and only
+        very little of punjabi. plus some would say hindi and urdu are same but i disagree so i
+        count that as a seperate language. fun fact: i can read arabic fluently without
+        understanding anything at all(not joking at all) !
+      </h6>
     </div>
   </section>
 </template>
@@ -80,7 +105,10 @@
 <script setup>
 import { Screen } from 'quasar'
 import MySkills from 'components/MySkills.vue'
-// import TestimonialCards from 'components/TestimonialCards.vue'
+import ResumeData from 'assets/resume.json'
+import MyActivities from 'components/MyActivities.vue'
+import TestimonialCards from 'components/TestimonialCards.vue'
+import flaws from 'components/MyFlaws.vue'
 console.log(Screen)
 </script>
 
@@ -167,6 +195,17 @@ h2 {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+}
+
+.custom-heading {
+  font-size: medium;
+  color: #800080;
+  font-family: monospace;
+  line-height: normal;
+  /* margin: 15px; */
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
 }
 
 .link {
