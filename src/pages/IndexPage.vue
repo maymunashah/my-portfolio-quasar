@@ -39,7 +39,7 @@
           </h6>
           <div class="row">
             <q-btn to="/techfolio" class="link">My Digital Footprint</q-btn>
-            <q-btn href="/cv.pdf" target="_blank" class="link">"Totally" Professional CV</q-btn>
+            <q-btn href="/cv.pdf" target="_blank" class="link">My CV</q-btn>
           </div>
         </div>
       </div>
@@ -50,7 +50,7 @@
   <section>
     <div class="heading-container">
       <div class="line-icon"></div>
-      <h1 class="heading">What I Do IN TECH?</h1>
+      <h1 class="heading">What I Do IN TECH.</h1>
     </div>
     <MySkills />
   </section>
@@ -58,7 +58,7 @@
   <section>
     <div class="heading-container">
       <div class="line-icon bg-accent"></div>
-      <h1 class="heading">What I Do IN LIFE?</h1>
+      <h1 class="heading">What I Do IN LIFE.</h1>
     </div>
     <MyActivities />
     <!-- <MySkills /> -->
@@ -83,7 +83,7 @@
     <div class="text-black">
       <!-- Added class for spacing -->
       <h6 class="custom-heading">
-        Oh did i mention i am a multilingual person? I speak Sindhi, urdu, english, italian and only
+        Oh did i mention i am a multilingual person. I speak Sindhi, urdu, english, italian and only
         very little of punjabi. plus some would say hindi and urdu are same but i disagree so i
         count that as a seperate language. fun fact: i can read arabic fluently without
         understanding anything at all(not joking at all) !
