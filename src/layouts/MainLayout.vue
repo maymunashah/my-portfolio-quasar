@@ -19,6 +19,7 @@
         <div v-if="$q.screen.width > 500" class="q-gutter-sm">
           <q-btn flat label="Portfolio" to="/portfolio" />
           <q-btn flat label="Techfolio" to="/techfolio" />
+          <q-btn flat label="Services" to="/services" />
           <q-btn flat label="CV" href="/cv.pdf" target="_blank" />
           <q-btn flat label="Contact" to="/contactme" />
         </div>
@@ -29,6 +30,7 @@
           <q-list>
             <q-item clickable v-ripple to="/portfolio" @click="toggleDrawer">Portfolio</q-item>
             <q-item clickable v-ripple to="/techfolio" @click="toggleDrawer">Techfolio</q-item>
+            <q-item clickable v-ripple to="/services" @click="toggleDrawer">Services</q-item>
             <q-item clickable v-ripple href="/cv.pdf" target="_blank" @click="toggleDrawer">
               CV
             </q-item>

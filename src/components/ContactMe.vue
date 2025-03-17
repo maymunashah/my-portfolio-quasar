@@ -80,6 +80,7 @@ onMounted(() => {
 /* Social Icons */
 .social-icons {
   margin-top: 20px;
+  justify-content: center;
 }
 
 /* Right Side: Calendly Embed */
@@ -88,5 +89,32 @@ onMounted(() => {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .contact-text {
+    text-align: center;
+    font-size: 0.9rem; /* Reduce text size */
+  }
+
+  .calendly-container {
+    width: 100%; /* Make Calendly take full width */
+  }
+
+  .calendly-inline-widget {
+    min-width: 100%;
+    height: 400px; /* Reduce height */
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 }
 </style>

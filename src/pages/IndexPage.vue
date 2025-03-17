@@ -12,7 +12,7 @@
         </h8>
         <div>
           <q-btn to="/techfolio" class="link">My Digital Footprint</q-btn>
-          <q-btn href="/cv.pdf" target="_blank" class="link">Totally Professional CV</q-btn>
+          <q-btn href="/cv.pdf" target="_blank" class="link">Professional CV</q-btn>
         </div>
       </div>
     </div>
